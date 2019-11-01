@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
-  font-family: Open Sans, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f2f2f2;
 }
 
 *, *::before, *::after {
@@ -13,38 +14,48 @@ body {
 }
 
 img {
+  display: block;
   width: 100%;
+}
+
+.card img {
+  margin: 0 auto 1.5rem;
+  width: 100px;
 }
 
 h2 {
   font-size: 2rem;
   text-align: center;
   margin: 0;
+  padding: 1.5rem 0;
 }
 
 h3 {
   font-size: 1rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  flex-grow: 1;
 }
 
 cite {
   font-style: italic;
 }
 
-section {
+.cards {
   display: flex;
-  justify-content: space-between;
-  flex-grow: 1;
-  align-items: stretch;
+  padding: 0 1.5rem;
 }
 
-div {
-  align-items: flex-start;
-  width: 25%;
-}
-
-.card{
+.card {
+  padding: .75rem;
   display: flex;
   flex-direction: column;
+  width: 25%;
+  border-left: 1px solid #000;
 }
 
 .quest {
@@ -59,7 +70,7 @@ div {
   background-color: #aaa;
 }
 
-.orta {
+.laser {
   background-color: #999;
 }
 
@@ -68,7 +79,7 @@ div {
   background-color: #333;
   color: #fff;
   font-size: 1rem;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   padding: .4em .75em .6em;
   border-radius: 8px;
@@ -76,7 +87,7 @@ div {
   width: 100%;
 }
 
-a:hover {
+.btn:hover {
   background-color: black;
 }
 
